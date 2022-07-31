@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="travel portal" />
+    <meta name="keywords" content="travel" />
+    <title>Travel Portal</title>
+    <link rel="shortcut icon" href="assets/fav/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <script defer src="libs/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/index.js"></script>
+  </head>
+
+  <body>
+    <header class="header inert">
+      <div class="container">
+        <div class="header__content content">
+          <a class="logo" href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.59123 7.8325C2.83304 7.525 3.15151 7.10875 3.40654 6.81125C4.17032 5.99125 4.26942 5.88375 4.96449 5.2775C5.17063 5.1175 5.41509 4.925 5.65426 4.74375C3.89018 6.15625 3.66554 7.72 5.28427 8.68625C5.28163 8.68625 5.28163 8.68625 5.28163 8.68875C7.54521 9.97875 12.5058 9.7 16.4198 8.0475C20.211 6.4475 21.6103 4.15875 19.7392 2.79875C18.0967 2.5075 16.1384 2.47375 14.0664 2.73625L13.851 2.4L14.0294 1.8425C15.2477 1.73875 16.4053 1.76375 17.4043 1.925C17.6461 1.96375 17.9646 2.03 18.2024 2.0775C18.6623 2.18375 18.912 2.2475 19.212 2.33875C19.5185 2.425 19.7802 2.51125 20.2361 2.67125C20.6827 2.8375 20.8756 2.9125 21.2337 3.08125C21.6348 3.25433 22.0244 3.4501 22.4005 3.6675C25.3817 5.44125 23.5277 8.6775 18.2672 10.895C13.0211 13.105 6.33611 13.4525 3.34047 11.7C3.33915 11.6975 3.33518 11.695 3.32725 11.6925H3.33254C1.69663 10.7125 1.52484 9.29 2.59123 7.8325ZM16.2401 20.2325L16.1978 18.24L14.7007 16.665C9.75461 17.725 4.89313 17.4975 2.18952 15.9913C2.18027 15.9812 2.1578 15.9713 2.14855 15.9613C0.618354 15.07 0.24043 13.92 0.355393 12.67C-0.00271022 14.4987 -0.0317813 15.1587 0.0197538 16.7237C0.0831817 17.7037 0.681782 18.6075 1.88559 19.32L1.89484 19.33C4.77684 21.025 10.7814 21.3925 16.2401 20.2325ZM22.4838 22.5138C15.5028 25.1625 6.76557 25.3188 2.97047 22.8675C3.38032 23.815 3.93798 24.6989 4.62488 25.49C8.10813 27.74 16.1278 27.5963 22.5327 25.165C26.2815 23.7437 28.6469 21.8525 29.2679 20.08L29.4424 19.5462C29.856 18.1938 29.9339 17.0675 30 16.065C29.9247 18.2413 27.2145 20.7162 22.4838 22.5138ZM7.07346 27.615C7.29282 27.8125 7.98259 28.6138 11.4777 29.4988C12.4225 29.6963 14.8011 30.33 19.1948 29.4088L19.2212 29.03L18.8737 28.515C14.7971 29.4275 10.2686 29.1225 7.07346 27.615ZM17.1611 11.8538L20.873 14.515C20.873 14.515 21.6672 15.0562 20.9179 15.4362C20.1713 15.8125 18.2539 16.7337 18.2539 16.7337L16.3604 16.065L15.4103 16.465L17.0858 17.8412L17.099 19.9825L18.0835 19.5688L18.7363 17.76C18.7363 17.76 20.7409 17.03 21.5363 16.755C22.3358 16.4862 22.2288 17.4062 22.2288 17.4062L21.835 21.795L23.1432 21.245L25.2971 15.3237C25.2971 15.3237 26.4388 14.7987 27.2422 14.3375C28.0443 13.8763 28.3192 13.1112 28.3192 13.1112C28.3192 13.1112 27.5369 12.7925 26.6357 13.0487C25.7345 13.3025 24.5597 13.755 24.5597 13.755L18.4654 11.3062L17.1611 11.8538ZM9.30797 3.43375L11.8279 5.3325L12.5164 5.235L11.1447 3.53125C11.1447 3.53125 10.8461 3.17875 11.2478 3.095C11.6522 3.01 12.6749 2.8125 12.6749 2.8125L13.444 3.39375L13.962 3.32125L13.3753 2.43875L13.6845 1.46L13.1837 1.52875L12.5904 2.27375C12.5904 2.27375 11.5491 2.36625 11.1395 2.39875C10.7272 2.42875 10.9042 2.01 10.9042 2.01L11.6944 0L11.002 0.09625L9.17848 2.6075C9.17848 2.6075 8.57063 2.7125 8.1306 2.83125C7.68924 2.94875 7.45667 3.27125 7.45667 3.27125C7.45667 3.27125 7.78042 3.51875 8.23631 3.51C8.69616 3.50125 9.30797 3.43375 9.30797 3.43375ZM21.7623 27.8312L20.1317 27.025L19.7564 27.1488L20.7224 27.9662C20.7224 27.9662 20.9285 28.1325 20.7118 28.2212C20.4951 28.3088 19.9427 28.5238 19.9427 28.5238L19.4868 28.3313L19.2159 28.4237L19.5952 28.8062L19.5582 29.365L19.841 29.2725L20.0524 28.8188C20.0524 28.8188 20.6259 28.6575 20.8545 28.6C21.0818 28.5412 21.0302 28.7938 21.0302 28.7938L20.8148 30L21.1915 29.8762L21.9301 28.2812C21.9301 28.2812 22.2565 28.16 22.4904 28.0487C22.7243 27.9375 22.8168 27.7325 22.8168 27.7325C22.8168 27.7325 22.6093 27.625 22.353 27.6787C22.0953 27.73 21.7623 27.8312 21.7623 27.8312Z"
+                fill="currentColor" />
+            </svg>
+            <span class="logo-text">Travel Portal</span>
+          </a>
+          <div class="menu-burger-bg"></div>
+          <div class="menu">
+            <button class="menu__burger btn-reset" type="button">
+              <span class="menu__burger-line"></span>
+            </button>
+            <nav class="menu__body">
+              <ul class="menu__list list-reset">
+                <li class="menu__item">
+                  <a href="#steps" class="menu__link">How It Works</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#plan" class="menu__link">Plan Your Trip</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#destinations" class="menu__link">Destinations</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#stories" class="menu__link">Travel Stories</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link js-login">Account</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#social" class="menu__link">Social Media</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <button class="login-btn js-login btn btn-reset">Login</button>
+        </div>
+      </div>
+    </header>
+    <main class="main inert">
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="visually-hidden">Travel Portal</h1>
+            <p class="title-big">Explore the beauty of the World</p>
+            <p class="text">
+              Recieve personalized recommendations for countries, hotels,
+              activities and more
+            </p>
+            <form class="search" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <div class="floating-label-text-field">
+                <input id="plan" class="search__input floating-label-text-field__input input-reset custom" type="text"
+                  name="search" placeholder="What would you like to do?" required />
+                <label for="plan" class="floating-label-text-field__label">What would you like to do?</label>
+              </div>
+              <button class="search__btn btn btn-reset" type="submit">
+                Start Planning
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="steps" id="steps">
+        <div class="container steps-container">
+          <h2 class="steps__title title">3 steps to the perfect trip</h2>
+          <ul class="steps__list list-reset">
+            <li class="steps__item">
+              <div class="steps__item-bg img-bike"></div>
+              <p class="steps__text">Tell us what you want to do</p>
+            </li>
+            <li class="steps__item">
+              <div class="steps__item-bg img-calendar"></div>
+              <p class="steps__text">Share us preferable dates</p>
+            </li>
+            <li class="steps__item">
+              <div class="steps__item-bg img-fly"></div>
+              <p class="steps__text">We will give you recommendations</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="destinations" id="destinations">
+        <div class="container destinations-container">
+          <h2 class="destinations__title title">popular destinations</h2>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slider-img-1">
+                <h3 class="swiper-title">spain</h3>
+              </div>
+              <div class="swiper-slide slider-img-2 swiper-slide-active">
+                <h3 class="swiper-title">japan</h3>
+              </div>
+              <div class="swiper-slide slider-img-3">
+                <h3 class="swiper-title">usa</h3>
+              </div>
+            </div>
+            <div class="swiper-pagination" role="button"></div>
+          </div>
+
+          <div class="swiper-button-prev" role="button"></div>
+          <div class="swiper-button-next" role="button"></div>
+
+          <button class="section-btn btn btn-reset">
+            <svg class="btn-arrow" width="36" height="23" viewBox="0 0 36 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.5 11.5C0.5 11.1685 0.631696 10.8505 0.866116 10.6161C1.10054 10.3817 1.41848 10.25 1.75 10.25H31.2325L23.365 2.38499C23.1303 2.15028 22.9984 1.83193 22.9984 1.49999C22.9984 1.16805 23.1303 0.849708 23.365 0.614992C23.5997 0.380275 23.9181 0.248413 24.25 0.248413C24.5819 0.248413 24.9003 0.380275 25.135 0.614992L35.135 10.615C35.2514 10.7311 35.3438 10.869 35.4068 11.0209C35.4698 11.1728 35.5022 11.3356 35.5022 11.5C35.5022 11.6644 35.4698 11.8272 35.4068 11.9791C35.3438 12.1309 35.2514 12.2689 35.135 12.385L25.135 22.385C24.9003 22.6197 24.5819 22.7516 24.25 22.7516C23.9181 22.7516 23.5997 22.6197 23.365 22.385C23.1303 22.1503 22.9984 21.8319 22.9984 21.5C22.9984 21.1681 23.1303 20.8497 23.365 20.615L31.2325 12.75H1.75C1.41848 12.75 1.10054 12.6183 0.866116 12.3839C0.631696 12.1495 0.5 11.8315 0.5 11.5Z"
+                fill="white" />
+            </svg>
+            <span class="btn-text">Find More</span>
+          </button>
+        </div>
+      </section>
+      <section class="stories" id="stories">
+        <div class="stories-background-transparent">
+          <div class="container stories-container">
+            <h2 class="stories__title title">travel stories</h2>
+            <ul class="stories__list list-reset">
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/thailand.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/thailand-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/thailand-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/thailand.jpg" alt="thailand" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      10 Photos of Attractive Thailand
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/utah.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/utah-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/utah-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/utah.jpg" alt="utah" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      Canyonlands National Park, Utah
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/mountains.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/mountains-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/mountains-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/mountains.jpg" alt="mountains" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      I left my heart in the Mountains!
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/journey.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/journey-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/journey-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/journey.jpg" alt="journey" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      The Longest journey in my life!
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/thailand.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/thailand-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/thailand-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/thailand.jpg" alt="thailand" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      10 Photos of Attractive Thailand
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/utah.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/utah-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/utah-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/utah.jpg" alt="utah" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      Canyonlands National Park, Utah
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/mountains.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/mountains-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/mountains-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/mountains.jpg" alt="mountains" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      I left my heart in the Mountains!
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/journey.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/journey-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/journey-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/journey.jpg" alt="journey" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      The Longest journey in my life!
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/thailand.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/thailand-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/thailand-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/thailand.jpg" alt="thailand" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      10 Photos of Attractive Thailand
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/utah.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/utah-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/utah-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/utah.jpg" alt="utah" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      Canyonlands National Park, Utah
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/mountains.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/mountains-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/mountains-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/mountains.jpg" alt="mountains" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      I left my heart in the Mountains!
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+              <li class="stories__item">
+                <article class="stories__article">
+                  <picture class="stories__picture">
+                    <source media="(min-width: 601px)" srcset="assets/img/jpg/journey.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/journey-mobile.webp" />
+                    <source media="(min-width: 300px)" srcset="assets/img/jpg/journey-mobile.jpg" />
+                    <img class="stories__image" src="./assets/img/jpg/journey.jpg" alt="journey" />
+                  </picture>
+                  <div class="stories__text-content">
+                    <h3 class="stories__subtitle">
+                      The Longest journey in my life!
+                    </h3>
+                    <p class="stories__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                    </p>
+                    <a href="#" class="stories__link">Read More</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="section-btn btn btn-reset js-show-btn">
+              <svg class="btn-arrow" width="36" height="23" viewBox="0 0 36 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.5 11.5C0.5 11.1685 0.631696 10.8505 0.866116 10.6161C1.10054 10.3817 1.41848 10.25 1.75 10.25H31.2325L23.365 2.38499C23.1303 2.15028 22.9984 1.83193 22.9984 1.49999C22.9984 1.16805 23.1303 0.849708 23.365 0.614992C23.5997 0.380275 23.9181 0.248413 24.25 0.248413C24.5819 0.248413 24.9003 0.380275 25.135 0.614992L35.135 10.615C35.2514 10.7311 35.3438 10.869 35.4068 11.0209C35.4698 11.1728 35.5022 11.3356 35.5022 11.5C35.5022 11.6644 35.4698 11.8272 35.4068 11.9791C35.3438 12.1309 35.2514 12.2689 35.135 12.385L25.135 22.385C24.9003 22.6197 24.5819 22.7516 24.25 22.7516C23.9181 22.7516 23.5997 22.6197 23.365 22.385C23.1303 22.1503 22.9984 21.8319 22.9984 21.5C22.9984 21.1681 23.1303 20.8497 23.365 20.615L31.2325 12.75H1.75C1.41848 12.75 1.10054 12.6183 0.866116 12.3839C0.631696 12.1495 0.5 11.8315 0.5 11.5Z"
+                  fill="white" />
+              </svg>
+              <span class="btn-text">See More</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer inert">
+      <div class="container">
+        <div class="footer__content content">
+          <p class="copyright">All Rights Reserved © Travel Portal</p>
+          <ul id="social" class="social-list list-reset">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">we are on instagram</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.46778 0.494892C11.1126 0.419171 11.6371 0.402344 15.827 0.402344C20.0169 0.402344 20.5413 0.420573 22.1848 0.494892C23.8282 0.569211 24.95 0.831432 25.9316 1.21144C26.9594 1.59986 27.8919 2.20704 28.6632 2.9923C29.4484 3.76213 30.0542 4.69322 30.4412 5.72247C30.8226 6.70405 31.0834 7.82584 31.1592 9.46647C31.2349 11.1141 31.2517 11.6386 31.2517 15.8271C31.2517 20.017 31.2335 20.5414 31.1592 22.1863C31.0848 23.8269 30.8226 24.9487 30.4412 25.9303C30.0542 26.9596 29.4474 27.8923 28.6632 28.6632C27.8919 29.4485 26.9594 30.0543 25.9316 30.4413C24.95 30.8227 23.8282 31.0835 22.1876 31.1593C20.5413 31.235 20.0169 31.2518 15.827 31.2518C11.6371 31.2518 11.1126 31.2336 9.46778 31.1593C7.82716 31.0849 6.70536 30.8227 5.72378 30.4413C4.69442 30.0542 3.76179 29.4475 2.9908 28.6632C2.20608 27.893 1.59881 26.9608 1.21135 25.9317C0.83134 24.9501 0.570522 23.8283 0.494801 22.1877C0.419079 20.54 0.402252 20.0156 0.402252 15.8271C0.402252 11.6372 0.420481 11.1127 0.494801 9.46928C0.56912 7.82584 0.83134 6.70405 1.21135 5.72247C1.59938 4.69334 2.20711 3.76117 2.9922 2.99089C3.76209 2.20634 4.69379 1.59908 5.72238 1.21144C6.70395 0.831432 7.82575 0.570613 9.46638 0.494892H9.46778ZM22.06 3.27134C20.4334 3.19702 19.9454 3.1816 15.827 3.1816C11.7086 3.1816 11.2206 3.19702 9.59399 3.27134C8.08938 3.34005 7.27327 3.59106 6.72919 3.80279C6.00984 4.08324 5.49522 4.41558 4.95535 4.95544C4.44359 5.45331 4.04975 6.05941 3.8027 6.72929C3.59096 7.27336 3.33996 8.08947 3.27125 9.59408C3.19693 11.2207 3.18151 11.7087 3.18151 15.8271C3.18151 19.9455 3.19693 20.4335 3.27125 22.0601C3.33996 23.5647 3.59096 24.3808 3.8027 24.9249C4.0495 25.5937 4.44353 26.2009 4.95535 26.6987C5.45315 27.2105 6.06032 27.6046 6.72919 27.8513C7.27327 28.0631 8.08938 28.3141 9.59399 28.3828C11.2206 28.4571 11.7072 28.4725 15.827 28.4725C19.9468 28.4725 20.4334 28.4571 22.06 28.3828C23.5646 28.3141 24.3807 28.0631 24.9248 27.8513C25.6441 27.5709 26.1587 27.2386 26.6986 26.6987C27.2104 26.2009 27.6045 25.5937 27.8513 24.9249C28.063 24.3808 28.314 23.5647 28.3827 22.0601C28.457 20.4335 28.4725 19.9455 28.4725 15.8271C28.4725 11.7087 28.457 11.2207 28.3827 9.59408C28.314 8.08947 28.063 7.27336 27.8513 6.72929C27.5708 6.00993 27.2385 5.49531 26.6986 4.95544C26.2007 4.44372 25.5946 4.04989 24.9248 3.80279C24.3807 3.59106 23.5646 3.34005 22.06 3.27134ZM13.8568 20.5821C14.9571 21.0401 16.1823 21.1019 17.3231 20.757C18.4639 20.412 19.4495 19.6817 20.1117 18.6908C20.7739 17.6999 21.0715 16.5098 20.9537 15.3238C20.8359 14.1378 20.31 13.0295 19.4658 12.1882C18.9277 11.6504 18.277 11.2387 17.5606 10.9825C16.8442 10.7264 16.08 10.6322 15.3229 10.7069C14.5657 10.7816 13.8346 11.0232 13.1821 11.4144C12.5295 11.8055 11.9718 12.3365 11.5491 12.9691C11.1264 13.6016 10.8493 14.3201 10.7375 15.0726C10.6258 15.8252 10.6823 16.5931 10.903 17.3212C11.1237 18.0493 11.5031 18.7194 12.0139 19.2832C12.5246 19.8471 13.154 20.2907 13.8568 20.5821ZM10.2208 10.2209C10.957 9.48467 11.831 8.90067 12.7929 8.50223C13.7548 8.1038 14.7858 7.89872 15.827 7.89872C16.8681 7.89872 17.8991 8.1038 18.861 8.50223C19.8229 8.90067 20.697 9.48467 21.4332 10.2209C22.1694 10.9571 22.7534 11.8311 23.1518 12.793C23.5503 13.7549 23.7553 14.7859 23.7553 15.8271C23.7553 16.8682 23.5503 17.8992 23.1518 18.8611C22.7534 19.823 22.1694 20.697 21.4332 21.4333C19.9463 22.9201 17.9297 23.7554 15.827 23.7554C13.7243 23.7554 11.7076 22.9201 10.2208 21.4333C8.73394 19.9464 7.89863 17.9298 7.89863 15.8271C7.89863 13.7243 8.73394 11.7077 10.2208 10.2209ZM25.5137 9.07945C25.6961 8.90735 25.8422 8.7004 25.9432 8.47084C26.0442 8.24128 26.0982 7.99379 26.1018 7.74301C26.1055 7.49224 26.0588 7.24328 25.9645 7.01087C25.8702 6.77847 25.7303 6.56734 25.5529 6.39C25.3756 6.21265 25.1644 6.07269 24.932 5.97841C24.6996 5.88412 24.4507 5.83742 24.1999 5.84108C23.9491 5.84473 23.7016 5.89867 23.4721 5.99969C23.2425 6.10071 23.0356 6.24677 22.8635 6.4292C22.5288 6.78402 22.3455 7.2553 22.3526 7.74301C22.3597 8.23073 22.5566 8.69647 22.9015 9.04137C23.2464 9.38628 23.7122 9.58318 24.1999 9.59029C24.6876 9.5974 25.1589 9.41416 25.5137 9.07945Z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">we are on youtube</span>
+                <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.8944 2.60889H8.06742C4.96967 2.60889 2.45844 5.12012 2.45844 8.21788V19.4359C2.45844 22.5336 4.96967 25.0449 8.06742 25.0449H24.8944C27.9922 25.0449 30.5034 22.5336 30.5034 19.4359V8.21788C30.5034 5.12012 27.9922 2.60889 24.8944 2.60889Z"
+                    stroke="currentColor" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.6876 13.8269L13.6764 9.62012V18.0336L20.6876 13.8269Z" stroke="currentColor"
+                    stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">we are on twitter</span>
+                <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M32.4612 3.92278C31.2903 4.44162 30.0325 4.79218 28.7102 4.95063C30.0746 4.13423 31.0953 2.84932 31.582 1.33564C30.3001 2.09704 28.8972 2.63299 27.4341 2.92018C26.4503 1.86971 25.1472 1.17344 23.7271 0.939468C22.3069 0.7055 20.8493 0.946924 19.5805 1.62626C18.3116 2.30559 17.3026 3.38483 16.71 4.69641C16.1173 6.00799 15.9743 7.47853 16.3031 8.87973C13.7057 8.74931 11.1647 8.07421 8.84514 6.89822C6.52554 5.72223 4.47913 4.07165 2.83872 2.05359C2.27782 3.02114 1.9553 4.14294 1.9553 5.33765C1.95468 6.41317 2.21953 7.47221 2.72637 8.42082C3.23321 9.36942 3.96635 10.1783 4.86076 10.7756C3.82348 10.7426 2.80909 10.4623 1.90202 9.95806V10.0422C1.90191 11.5506 2.4237 13.0127 3.37884 14.1802C4.33398 15.3478 5.66365 16.1489 7.14222 16.4477C6.17997 16.7081 5.17113 16.7464 4.19189 16.5598C4.60905 17.8578 5.42165 18.9928 6.51593 19.8059C7.6102 20.6191 8.93137 21.0697 10.2945 21.0947C7.98053 22.9112 5.12282 23.8965 2.18106 23.8922C1.65996 23.8923 1.1393 23.8619 0.621765 23.801C3.60782 25.721 7.0838 26.7399 10.6338 26.7359C22.6511 26.7359 29.2206 16.7828 29.2206 8.15056C29.2206 7.87011 29.2136 7.58686 29.201 7.30641C30.4788 6.38229 31.5819 5.23795 32.4584 3.92699L32.4612 3.92278Z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-login">
+      <div class="popup-content">
+        <h3 class="popup-title">Log in to your account</h3>
+        <a class="btn btn-popup btn-facebook js-register" href="#">
+          <span class="btn-text-popup btn-text-popup-1">Sign In with Facebook</span>
+        </a>
+        <a class="btn btn-popup btn-google js-register" href="#">
+          <span class="btn-text-popup btn-text-popup-2">Sign In with Google</span>
+        </a>
+        <span class="popup-border js-register">or</span>
+        <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <label class="form__label">
+            <input class="form__input input-reset custom" type="email" name="email" id="email" required
+              pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+            <span class="label-text">E-mail</span>
+          </label>
+          <label class="form__label">
+
+            <input class="form__input input-reset custom" type="password" name="password" id="password" required
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+            <span class="label-text">Password</span>
+          </label>
+          <button class="btn form__button form__button-login btn-reset" type="submit">Sign In</button>
+        </form>
+        <a href="#" class="recovery-link link-decorate js-register">Forgot Your Password?</a>
+        <p class="popup-register popup-links">
+          <span class="popup-text">Don’t have an account?</span>
+          <a class="register-link link-decorate" href="#">Register</a>
+        </p>
+      </div>
+    </div>
+  </body>
+
+</html>

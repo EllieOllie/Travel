@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Aleo';
+  src: local("aleo-bold"),
+        url('../assets/fonts/aleo-bold-webfont.woff2') format('woff2'),
+        url('../assets/fonts/aleo-bold-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: local("aleo-bolditalic"),
+        url('../assets/fonts/aleo-bolditalic-webfont.woff2') format('woff2'),
+        url('../assets/fonts/aleo-bolditalic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: local("aleo-italic"),
+        url('../assets/fonts/aleo-italic-webfont.woff2') format('woff2'),
+        url('../assets/fonts/aleo-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: local("aleo-regular"),
+        url('../assets/fonts/aleo-regular-webfont.woff2') format('woff2'),
+        url('../assets/fonts/aleo-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Magra';
+  src: local("magra-bold"),
+        url('../assets/fonts/magra-bold-webfont.woff2') format('woff2'),
+        url('../assets/fonts/magra-bold-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Red Hat Text';
+  src: local("RedHatText-Regular"),
+        url('../assets/fonts/RedHatText-Regular.woff2') format('woff2'),
+        url('../assets/fonts/RedHatText-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Red Hat Text';
+  src: local("RedHatText-Medium"),
+        url('../assets/fonts/RedHatText-Medium.woff2') format('woff2'),
+        url('../assets/fonts/RedHatText-Medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
